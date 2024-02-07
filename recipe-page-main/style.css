@@ -1,0 +1,71 @@
+html{
+    background-color: rgb(207, 175, 175);
+}
+body{
+    font-family: 'Young Serif', serif;
+    font-weight: normal;
+    width: 50%;
+    display: block;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 2%;
+}
+
+.app{
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+#image-omelette{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 2%;
+}
+
+.recipe {
+    font-size: 250%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.preparation{
+    margin-left: 30px;
+}
+
+.preparation-time{
+    color: brown;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+ol{
+    padding-left: 20px;
+}
+
+li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td{
+    border-bottom: 1px solid #ccc;
+}
+
+th, td{
+    padding: 8px;
+    text-align: left;
+}
