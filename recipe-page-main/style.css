@@ -12,10 +12,8 @@ body{
 }
 
 .app{
-    padding-top: 20px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin:auto;
     width: 90%;
 }
 
@@ -25,6 +23,7 @@ body{
     margin-right: auto;
     width: 90%;
     border-radius: 2%;
+    padding-top: 20px;
 }
 
 .recipe {
@@ -49,11 +48,25 @@ body{
 
 ol{
     padding-left: 20px;
+    list-style-type: none;
 }
 
 li{
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+ol li {
+    counter-increment: my-counter;
+    position: relative;
+    margin-bottom: 10px;
+}
+  
+ol li::before {
+    content: counter(my-counter) ". ";
+    color: brown; /* Set the color of the numbers */
+    font-weight: bold;
+    margin-right: 5px; /* Adjust spacing between number and text */
 }
 
 table{
@@ -68,4 +81,24 @@ table, th, td{
 th, td{
     padding: 8px;
     text-align: left;
+}
+
+/*Media query for mobile devices */
+@media only screen and (max-width : 650px){
+    body{
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    .app{
+        padding-left: 10px;
+        width: 100%;
+        margin: auto;
+    }
+
+    #image-omelette{
+        width: 100%;
+        border-radius: 0%;
+        padding-top: 0%;
+    }
 }
